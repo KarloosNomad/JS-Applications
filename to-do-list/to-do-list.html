@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="css/to-do-list.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">To do List</h1>
+            <input type="text" placeholder="Type a Task" id="input" autofocus>
+            <button class="button" id="add-task-button">✚</button>
+                <select name="select" id="selection" class="select">
+                    <option value="0">-- Select an option --</option>
+                    <option value="1">Mark all</option>
+                    <option value="2">Unmark all</option>
+                    <option value="3">Clear list</option>
+                </select>
+        </header>
+        <section id="task-section">
+            <ul id="task-list"></ul>
+        </section>
+    </div>
+    <script src="js/to-do-list.js"></script>
+</body>
+
+</html>
