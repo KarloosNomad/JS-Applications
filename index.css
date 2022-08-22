@@ -1,0 +1,139 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,500;1,700&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+/* HEADER */
+h1 {
+  font-size: 5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  margin: 30px;
+  text-align: center;
+}
+
+/* SECTION */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  margin-left: 28vw;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.app {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 25%;
+  position: relative;
+}
+
+.app span {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  top: 35%;
+  color: black;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+#archery span {
+  left: 21%;
+  transition: all 2s;
+}
+
+#painting span {
+  left: 18%;
+  transition: all 2s;
+}
+
+#to-do-list span {
+  left: 18%;
+  top: 42%;
+  transition: all 2s;
+}
+
+#calc span {
+  left: 16%;
+  transition: all 2s;
+}
+
+@media (min-width: 810px) {
+  #archery {
+    transition: all 8s;
+  }
+
+  #archery:hover {
+    background-image: url(images/archery.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #archery:hover span {
+    opacity: 0;
+  }
+
+  #painting {
+    transition: all 8s;
+  }
+
+  #painting:hover {
+    background-image: url(images/painting.png);
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px white;
+  }
+
+  #painting:hover span {
+    opacity: 0;
+  }
+
+  #to-do-list {
+    transition: all 8s;
+  }
+
+  #to-do-list:hover {
+    background-image: url(images/to-do-list.png);
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+  }
+
+  #to-do-list:hover span {
+    opacity: 0;
+  }
+
+  #calc {
+    transition: all 8s;
+  }
+
+  #calc:hover {
+    background-image: url(images/calc.png);
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
+
+  #calc:hover span {
+    opacity: 0;
+  }
+}

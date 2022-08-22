@@ -1,0 +1,119 @@
+/* INDEX */
+#archery {
+  background-image: url(images/archery.png);
+  background-position: 80px 65px;
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+#painting {
+  background-image: url(images/painting.png);
+  background-position: 80px 80px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+}
+
+#to-do-list {
+  background-image: url(images/to-do-list.png);
+  background-position: 80px 55px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+}
+
+#calc {
+  background-image: url(images/calc.png);
+  background-position: bottom;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.app span,
+#to-do-list span {
+  top: 15%;
+}
+
+@media (max-width: 340px) {
+  header h1 {
+    margin: 20px;
+    font-size: 4rem;
+  }
+}
+
+/* TO-DO-LIST */
+.header-to-do-list #input {
+  margin-top: 0;
+  height: 60px;
+  float: none;
+  margin-left: 0;
+  background-position: 25px 10px;
+  background-size: 30px;
+  padding-left: 68px;
+}
+
+.header-to-do-list #add-task-button {
+  width: 60px;
+  height: 60px;
+  top: 36.8%;
+  right: 25%;
+}
+
+
+@media (max-width: 700px) {
+  .container-to-do-list {
+    width: 100%;
+    margin: 0;
+  }
+  .header-to-do-list{
+    height: 180px;
+  }
+  .header-to-do-list #input {
+    height: 10%;
+    width: 70%;
+    background-size: 25px;
+    background-position: 20px 07px;
+    font-size: 1.6rem;
+    padding-left: 55px;
+  }
+  .header-to-do-list #add-task-button {
+    width: 48px;
+    height: 48px;
+    top: 40.9%;
+    right: 15%;
+    font-size: 1.6rem;
+  }
+
+  #selection, #selection option{
+    font-size: 1.5rem;
+  }
+
+  #task{
+    font-size: 1.8rem;
+  }
+
+  #removeTaskButton{
+    width: 15px;
+    height: 15px;
+    font-size: 5pt;
+  }
+
+  #footer-to-do-list a{
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 340px){
+  .header-to-do-list .title{
+    padding: 0;
+    font-size: 2.5rem;
+  }
+  .header-to-do-list #input{
+    font-size: 1.4rem;
+    background-image: none;
+    padding-left: 30px;
+  }
+  .header-to-do-list #add-task-button{
+    top: 43.2%;
+  }
+}

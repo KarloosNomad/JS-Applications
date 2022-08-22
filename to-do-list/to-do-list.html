@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <link rel="stylesheet" href="css/to-do-list.css">
+    <link rel="stylesheet" media="(max-width:980px)" href="../responsivity.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <div class="container-to-do-list">
+        <header class="header-to-do-list">
             <h1 class="title">To do List</h1>
             <input type="text" placeholder="Type a Task" id="input" autofocus>
             <button class="button" id="add-task-button">✚</button>
-                <select name="select" id="selection" class="select">
+                <select name="select" id="selection" class="select" hidden>
                     <option value="0">-- Select an option --</option>
                     <option value="1">Mark all</option>
                     <option value="2">Unmark all</option>
@@ -25,6 +26,7 @@
         <section id="task-section">
             <ul id="task-list"></ul>
         </section>
+        <footer id="footer-to-do-list"><a href="../index.html">Go Back to JS Applications</a></footer>
     </div>
     <script src="js/to-do-list.js"></script>
 </body>
