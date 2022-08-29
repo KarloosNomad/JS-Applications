@@ -1,5 +1,14 @@
-h1{
-    font-size: 24pt;
-    font-weight: bold;
-    text-align: center;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* SCREEN */
+canvas{
+    background-color: black;
 }
